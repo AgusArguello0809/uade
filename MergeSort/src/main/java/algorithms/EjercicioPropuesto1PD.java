@@ -76,7 +76,7 @@ public class EjercicioPropuesto1PD {
         int n = 5;
         int[][] f = new int[n + 1][n + 1]; // 1-indexado
 
-        // Inicializamos todo a INF (tramo inexistente)
+        // Inicializamos tod a INF (tramo inexistente)
         for (int i = 0; i <= n; i++) Arrays.fill(f[i], INF);
 
         // Definimos algunos costos directos i->j (i<j)
