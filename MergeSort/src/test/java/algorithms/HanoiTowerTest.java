@@ -40,16 +40,6 @@ class HanoiTowerTest {
         String[] lineas = salida.split("\\R+"); // divide por saltos de línea
         // Deben ser 2^3 - 1 = 7 movimientos
         assertEquals(7, lineas.length, "Cantidad de movimientos incorrecta");
-
-        List<String> esperado = List.of(
-                "Move A to B",
-                "Move A to C",
-                "Move B to C",
-                "Move A to B",
-                "Move C to A",
-                "Move C to B",
-                "Move A to B"
-        );
         // ¡OJO! El orden correcto para tu implementación es (from=a, to=c, aux=b):
         // transfer(a,b,c,n-1), move(a,c), transfer(b,c,a,n-1)
         // Eso produce exactamente esta secuencia para n=3:

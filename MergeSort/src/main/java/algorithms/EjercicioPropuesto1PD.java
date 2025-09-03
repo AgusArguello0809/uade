@@ -21,7 +21,7 @@ public class EjercicioPropuesto1PD {
      * Calcula el costo mínimo para ir del puesto 1 al puesto n.
      *
      * @param f matriz 1-indexada de costos; usar f[i][j] solo si i<j.
-     *          Si un tramo no existe, poné f[i][j] = INF (o un valor muy grande).
+     *          Si un tramo no existe, insertar f[i][j] = INF (o un valor muy grande).
      * @return Result con costo mínimo y ruta (lista de puestos).
      *
      * Complejidad: O(n^2) tiempo, O(n) memoria (además de la matriz f).
