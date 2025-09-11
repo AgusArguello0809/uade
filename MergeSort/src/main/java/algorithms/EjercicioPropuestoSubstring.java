@@ -40,8 +40,8 @@ public class EjercicioPropuestoSubstring {
         }
         if (bestLen == 0)
             return new Substring(0, 0, 0, "");
-        int start = endPos - bestLen + 1;
-        return new Substring(bestLen, start - 1, endPos - 1, x.substring(start - 1, endPos));
+        int start = endPos - bestLen;
+        return new Substring(bestLen, start, endPos - 1, x.substring(start, endPos));
     }
 
     public static int[][] initializeMatrix(int filas, int columnas) {
@@ -56,6 +56,6 @@ public class EjercicioPropuestoSubstring {
         String x = "substring";
         String y = "string";
         Substring res = LCSubstring(x, y);
-        System.out.println(res.toString());
+        System.out.println(res);
     }
 }
